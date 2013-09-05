@@ -1,5 +1,5 @@
 用Infinality优化字体效果
-```
+```sh
 $ sudo add-apt-repository ppa:no1wantdthisname/ppa
 $ sudo apt-get update
 $ sudo apt-get upgrade
