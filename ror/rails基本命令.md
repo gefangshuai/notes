@@ -66,4 +66,8 @@ $ rails console --sandbox
 ```
 <%= debug(params) if Rails.env.development? %>
 ```
+###编程技巧
 
+- 重置session
+
+`reset_session`
