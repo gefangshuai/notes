@@ -64,6 +64,7 @@ rvm gemset create rails23
 ```
 
 - **然后可以设定已建立的gemset做为当前环境**
+
 use 可以用来切换语言，或者gemset,前提是他们已经被安装(或者建立ã¯以在list命令中看到。
 
 ```
