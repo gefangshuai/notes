@@ -61,4 +61,9 @@ $ rails console --sandbox
 >> user.errors.full_messages
 => ["Name can't be blank"]
 ```
+###在页面上加入debug信息
+
+```
+<%= debug(params) if Rails.env.development? %>
+```
 
