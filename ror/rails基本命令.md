@@ -22,28 +22,22 @@ Rails 部署中的基本命令及技巧
 ### 撤销操作
 
 - controller的产生与撤销
+    
+    `rails generate controller FooBars baz quux  ##产生`
 
-  ```
-    rails generate controller FooBars baz quux  ##产生
-
-    rails destroy  controller FooBars baz quux  ##撤销
-  ```
+    `rails destroy  controller FooBars baz quux  ##撤销`
 
 - model的产生与撤销
 
-  ```
-    rails generate model Foo bar:String ##产生
+   `rails generate model Foo bar:String ##产生`
    
-    rails destroy  model Foo            ##撤销
-  ```
+   `rails destroy  model Foo            ##撤销`
 
 - 数据库的产生与撤销
     
-  ```
-    rake db:migrate   ##产生
+   `rake db:migrate   ##产生`
     
-    rake db:rollback  #撤销
-  ```
+   `rake db:rollback  #撤销`
 
 ###在rails console中使用模型校验
 
