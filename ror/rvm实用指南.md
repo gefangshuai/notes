@@ -6,19 +6,19 @@ RVM实用指南
 
 这里所有的命令都是再用户权限下操作的，**任何命令最好都不要用sudo.**
 
-##rvm安装
+###rvm安装
 
 ```
 $ curl -L get.rvm.io | bash -s stable
 $ source ~/.bashrc
 $ source ~/.bash_profile
 ```
-##修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，这样能提高安装速度
+###修改 RVM 的 Ruby 安装源到国内的 淘宝镜像服务器，这样能提高安装速度
 
 ```
 $ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g' ~/.rvm/config/db
 ```
-##ruby的安装与切换
+###ruby的安装与切换
 
 - **列出已知的ruby版本**
 
@@ -46,7 +46,7 @@ $ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g
 
 `rvm remove 1.9.2`
 
-##gemset的使用
+###gemset的使用
 
 rvm不仅可以提供一个多ruby版本共存的环境，还可以根据项目管理不同的gemset.
 
@@ -87,7 +87,7 @@ rvm use 1.8.7@rails23
 
 `rvm gemset delete rails2-3`
 
-##项目自动加载gemset
+###项目自动加载gemset
 
 rvm还可以自动加载gemset.
 
@@ -108,8 +108,7 @@ rvm use 1.9.3@rails313
 
 然后无论你当前ruby设置是什么，cd到这个项目的时候，rvm会帮你加载 ruby 1.9.3和rails313 gemset.
 
-##使用rvm来快速部署nginx+passenger
-
+###使用rvm来快速部署nginx+passenger
 
 - **首先安装passenger**
 
@@ -131,6 +130,6 @@ rvm use 1.9.3@rails313
 
 当我第一次安装完成了，就惊呼，这也太爽了吧。
 
-> ps:
+** ps:**
 
-rvm是个好东西，做的很智能，（大部分）操作失败后会告诉你原因，然后告诉你需要安装哪些Lib等等，非常适合新手老手使用,简直是居家旅行必备良药。
+> rvm是个好东西，做的很智能，（大部分）操作失败后会告诉你原因，然后告诉你需要安装哪些Lib等等，非常适合新手老手使用,简直是居家旅行必备良药。
